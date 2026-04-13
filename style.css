@@ -24,7 +24,7 @@ div#nomination div:hover {
 }
 
 div.upper-container {
-    margin: 0px 150px 0px 150px;
+    margin: 0px 150px 0px 160px;
 }
 
 header {
@@ -36,13 +36,14 @@ header {
     border-bottom: 1px solid #F7941E;
 }
 
-/* CSS DEI LOGHI SOCIAL */
-div.social-icon {
-    margin-top: 15px;
-    margin-right: 320px;
-    float: left;
+div.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
+/* CSS DEI LOGHI SOCIAL */
 img.social-logo {
     float: left;
     width: 30px;
@@ -51,7 +52,6 @@ img.social-logo {
 
 img.facebook-image, img.tiktok-image {
     margin-top: 3px;
-    margin-left: 5px;
 }
 
 img.bsky-image {
@@ -64,7 +64,6 @@ img.tiktok-image {
 
 img.instagram-image {
     width: 34px;
-    margin-left: 0px;
 }
 
 img.apple-image {
@@ -73,31 +72,27 @@ img.apple-image {
 }
 
 /* CSS DELLA TESTATA */
-img#logo {
-    float: left;
-    margin-right: 190px;
-}
-
-button {
-    margin-top: 20px;
+.header-actions button {
     font-size: 15px;
     font-weight: bold;
     height: 35px;
-    float: left;
     background-color: #F7941E;
     color: white;
 }
 
-div.header-actions div {
-    float: left;
-    margin-left: 20px;
-    margin-top: 26px;
+.header-actions button#search {
+    background-color: transparent;
+    border: none;
+}
+
+div.header-actions {
+    display: flex;
+    gap: 20px;
 }
 
 ul#nav-list {
     list-style-type: none;
-    margin-right: 25px;
-    margin-left: 45px;
+    margin-left: 25px;
     margin-bottom: 0px;
     padding: 0;
     display: flex;
@@ -106,13 +101,11 @@ ul#nav-list {
     text-align: center;
     font-size: small;
     font-weight: bold;
-
 }
 
 ul#nav-list li {
     margin-top: 10px;
     padding: 8px;
-    /*padding-bottom: 0px;*/
 }
 
 ul#nav-list  li:hover {
@@ -123,7 +116,7 @@ ul#nav-list  li:hover {
 /* CSS PRIMA SEZIONE DELLA PAGINA*/
 section#main {
     display: flex;
-    gap: 10px;
+    gap: 40px;
     margin-right: 250px;
     margin-top: 40px;
 }
@@ -151,7 +144,127 @@ p {
     font-size: larger;
 }
 
+span b {
+    color: #F7941E;
+}
+
 /* CSS PER ASIDE*/
+aside#events {
+    width: 320px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.event-header h2 {
+    color: #F7941E;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.event-header span {
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+.event-body {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 40px;
+}
+
+.event-info h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.event-info p {
+    font-size: 18px;
+    font-style: normal;
+}
+
+.event-tabs {
+    display: flex;
+    gap: 4px;
+    background-color: #ddd;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.tab {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tab.active {
+    background-color: white;
+}
+
+.events-search {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.events-search input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.events-search button {
+    background: none;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+    color: black;
+    margin-top: 0;
+    height: auto;
+    float: none;
+}
+
+.search-btn {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    float: none;
+    height: auto;
+    margin-top: 0;
+}
+span#submit {
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 40px;
+}
+
+
 
 
 

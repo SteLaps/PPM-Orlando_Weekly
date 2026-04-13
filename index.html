@@ -6,29 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Orlando Weekly </title>
     <link rel="stylesheet" href="style.css">
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">-->
+    <link rel="icon" href="https://placehold.co/400x400">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
 <body>
     <div>
         <div id="nomination">
             <div> LOREM IPSUM </div>
         </div>
+
         <div class="upper-container">
             <header>
-                <div class="social-icon">
-                    <img class="social-logo facebook-image" src="src/facebook-logo.png" alt="facebook">
-                    <img class="social-logo bsky-image" src="src/bsky-logo.png" alt="bsky">
-                    <img class="social-logo tiktok-image" src="src/tiktok-logo.png" alt="tiktok">
-                    <img class="social-logo instagram-image" src="src/instagram-logo.png" alt="instagram">
-                    <img class="social-logo apple-image" src="src/apple_news-logo.png" alt="apple.news">
-                    <img class="social-logo google-image" src="src/google-logo.png" alt="google">
-                </div>
+                <div class="header-top">
+                    <div class="social-icon">
+                        <img class="social-logo facebook-image" src="src/facebook-logo.png" alt="facebook">
+                        <img class="social-logo bsky-image" src="src/bsky-logo.png" alt="bsky">
+                        <img class="social-logo tiktok-image" src="src/tiktok-logo.png" alt="tiktok">
+                        <img class="social-logo instagram-image" src="src/instagram-logo.png" alt="instagram">
+                        <img class="social-logo apple-image" src="src/apple_news-logo.png" alt="apple.news">
+                        <img class="social-logo google-image" src="src/google-logo.png" alt="google">
+                    </div>
 
-                <img id="logo" src="https://placehold.co/160x70" alt="Orlando Weekly Logo">
-                <div class="header-actions">
-                    <button>Newsletter</button>
-                    <div>Support</div>
-                    <div>Add your Event</div>
+                    <img id="logo" src="https://placehold.co/160x70" alt="Orlando Weekly Logo">
+
+                    <div class="header-actions">
+                        <button>Newsletter</button>
+                        <div>Support</div>
+                        <div>Add your Event</div>
+                        <div>
+                            <button id="search">🔍</button>
+                        </div>
+                    </div>
                 </div>
 
                 <nav class="nav-bar">
@@ -53,18 +61,53 @@
                     <img src="https://placehold.co/850x750" alt="Orlando Area News">
                     <figcaption>LOREM IPSUM</figcaption>
                     <h1 id="main-title">Lorem Ipsum</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo ligula ac est tempus malesuada.
-                        Aenean egestas justo ac porttitor pulvinar. Fusce lorem quam, luctus eget ultrices tincidunt,
-                        malesuada non sapien. Nam mattis ligula nec facilisis blandit. Etiam hendrerit, lacus in vestibulum
-                        lobortis, dui ante placerat orci, dignissim dignissim sem urna et lacus.
-                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo ligula ac est tempus malesuada.</p>
+                    <span>by <b>Surname Name</b> Date</span>
                 </figure>
 
                 <aside id="events">
-                    <h2>Events</h2>
-                    <div>Stuff Picks</div>
-                    <img src="https://placehold.co/100x70" alt="Placeholder Image">
+                    <div class="event-header">
+                        <h2>Events</h2>
+                        <span>Staff Picks</span>
+                    </div>
+
+                    <div class="event-body">
+                        <img src="https://placehold.co/100x80" alt="evento">
+                        <div class="event-info">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Day, Month, Hour</p>
+                        </div>
+                    </div>
+
+                    <div class="event-tabs">
+                        <button class="tab active">Events</button>
+                        <button class="tab">Music</button>
+                        <button class="tab">Movies</button>
+                        <button class="tab">Dining</button>
+                    </div>
+
+                    <select class="event-select">
+                        <option>Lorem Ipsum</option>
+                    </select>
+
+                    <select class="event-select">
+                        <option>Lorem Ipsum</option>
+                    </select>
+
+                    <select class="event-select">
+                        <option>Lorem Ipsum</option>
+                    </select>
+
+                    <div class="events-search">
+                        <input type="text" placeholder="Enter keywords...">
+                        <button>🔍</button>
+                    </div>
+
+                    <button class="search-btn">Search</button>
+
+                    <span id="submit">Lorem Ipsum</span>
                 </aside>
+
             </section>
 
             <div id="footer">
@@ -73,7 +116,10 @@
         </div>
 
     </div>
-
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond/1.4.2/respond..min.js"></script>
 </body>
 
 </html>
