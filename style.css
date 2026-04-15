@@ -357,20 +357,20 @@ span#submit {
     gap: 8px;
 }
 
-.category-header, .best-of-orlando-header, .digital-issue-header {
+.category-header, .best-of-orlando-header, .digital-issue-header, .orlando-guides-header {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
-.category-header h2, .best-of-orlando-header h2, .digital-issue-header h2 {
+.category-header h2, .best-of-orlando-header h2, .digital-issue-header h2, .orlando-guides-header h2 {
     color: #F7941E;
     font-size: 22px;
     font-weight: bold;
     letter-spacing: 5px;
 }
 
-.category-header .line, .best-of-orlando-header .line, .digital-issue-header .line {
+.category-header .line, .best-of-orlando-header .line, .digital-issue-header .line, .orlando-guides-header .line {
     flex: 1;
     height: 1px;
     background-color: #333;
@@ -408,7 +408,7 @@ span#submit {
     cursor: pointer;
     float: none;
     height: auto;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .more-btn:hover {
@@ -456,6 +456,134 @@ span#submit {
     display: block;
     object-fit: cover;
 }
+
+/* CSS GUIDES */
+#guides-newsletter-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-top: -40px;
+    align-items: flex-start;
+}
+
+#orlando-guides-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.orlando-guides-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.orlando-guides-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.orlando-guide-title-row {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.more-link {
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+.orlando-guide-image {
+    position: relative;
+    margin: 0;
+}
+
+.orlando-guide-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/*.orlando-guide-image figcaption {*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    background: rgba(0, 0, 0, 0.55);*/
+/*    color: white;*/
+/*    padding: 10px;*/
+/*    font-size: 15px;*/
+/*    font-weight: bold;*/
+/*    margin-top: 0px;*/
+/*}*/
+
+/* CSS NEWSLETTER */
+#newsletter-section {
+    margin-top: 70px;
+    width: 590px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    /*gap: 10px;*/
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.newsletter-tagline {
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    /*margin: 0;*/
+    color: black;
+    margin-bottom: -5px;
+}
+
+.newsletter-subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    color: #DD3333;
+    /*margin: 0;*/
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    border-radius: 4px;
+}
+
+.signup-btn {
+    background-color: #C0392B;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    height: auto;
+    float: none;
+    margin-top: 0;
+    border-radius: 4px;
+}
+
+
+
 
 /*@media screen and (max-width: 700px) {*/
 
