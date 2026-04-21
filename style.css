@@ -524,9 +524,9 @@ span#submit, span#submit-mobile {
 /* CSS NEWSLETTER */
 #newsletter-section {
     margin-top: 70px;
-    width: 590px;
-    flex-shrink: 0;
+    width: auto;
     display: flex;
+    flex: 1;
     flex-direction: column;
     border-top: 2px solid lightgray;
     border-bottom: 2px solid lightgray;
@@ -706,7 +706,7 @@ footer {
     display: none;
 }
 
-button.smartphone:first-of-type {
+button.btn-support {
     background-color: #F7941E;
     color: white;
     font-size: 13px;
@@ -715,13 +715,17 @@ button.smartphone:first-of-type {
     padding: 0 10px;
 }
 
-button.smartphone:last-of-type {
+button.btn-hamburger {
     background-color: transparent;
     border: none;
     font-size: 20px;
     color: black;
 }
 
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
 /* CSS RESPONSIVE PER SCHERMO PIU PICCOLO */
 @media screen and (max-width: 1200px) {
     div.social-icon {
@@ -778,15 +782,29 @@ button.smartphone:last-of-type {
         flex-direction: row;
         align-items: flex-start;
     }
+
+    .orlando-guides-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-/* CSS RESPONSIVE PER CELLULARE */
-@media screen and (max-width: 430px) {
+/* CSS RESPONSIVE PER CELLULARE e FINESTRA PIù PICCOLA*/
+@media screen and (max-width: 1100px) {
+    #guides-newsletter-wrapper {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 430px), (max-width: 900px) {
 
     /* LAYOUT GENERALE */
     html, body {
         overflow-x: clip;
         width: 100%;
+    }
+
+    body {
+        margin: 0;
     }
 
     div.upper-container {
@@ -862,11 +880,6 @@ button.smartphone:last-of-type {
         height: auto;
     }
 
-    aside#events {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
     /* BACK PAGE NEWS */
     #back-page-news {
         flex-direction: column;
@@ -879,6 +892,7 @@ button.smartphone:last-of-type {
     /* ASIDE PER MOBILE */
     #content-wrapper {
         flex-direction: column;
+        gap: 20px;
     }
 
     aside#events {
