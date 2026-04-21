@@ -33,6 +33,10 @@
                         <div>Support</div>
                         <div>Add your Event</div>
                         <button id="search">🔍</button>
+
+                        <!-- visibile solo da cellulare, sostituisce il bottone "Support Us" a lato -->
+                        <button class="smartphone">Support Us</button>
+                        <button class="smartphone">☰</button>
                     </div>
                 </div>
 
@@ -52,15 +56,34 @@
                 </nav>
 
             </header>
+            <div id="content-wrapper">
+                <div id="content-left">
+                    <section id="main">
+                        <figure id="main-image">
+                            <img src="https://placehold.co/850x750" alt="Orlando Area News">
+                            <figcaption>LOREM IPSUM</figcaption>
+                            <h1 id="main-title">Lorem Ipsum</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo ligula ac est tempus malesuada.</p>
+                            <span>by <b>Surname Name</b> Date</span>
+                        </figure>
+                    </section>
 
-            <section id="main">
-                <figure id="main-image">
-                    <img src="https://placehold.co/850x750" alt="Orlando Area News">
-                    <figcaption>LOREM IPSUM</figcaption>
-                    <h1 id="main-title">Lorem Ipsum</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo ligula ac est tempus malesuada.</p>
-                    <span>by <b>Surname Name</b> Date</span>
-                </figure>
+                    <section id="back-page-news">
+                        <figure class="back-page-image">
+                            <img src="https://placehold.co/370x300" alt="Back Page News">
+                            <h2 class="back-page-title">Lorem Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo ligula ac est tempus malesuada.</p>
+                            <span>by <b>Surname Name</b> Date</span>
+                        </figure>
+
+                        <figure class="back-page-image">
+                            <img src="https://placehold.co/370x300" alt="Back Page News">
+                            <h2 class="back-page-title">Lorem Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo ligula ac est tempus malesuada.</p>
+                            <span>by <b>Surname Name</b> Date</span>
+                        </figure>
+                    </section>
+                </div>
 
                 <aside id="events">
                     <div class="event-header">
@@ -104,23 +127,7 @@
 
                     <span id="submit">Lorem Ipsum</span>
                 </aside>
-            </section>
-
-            <section id="back-page-news">
-                <figure class="back-page-image">
-                    <img src="https://placehold.co/370x300" alt="Back Page News">
-                    <h2 class="back-page-title">Lorem Ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo ligula ac est tempus malesuada.</p>
-                    <span>by <b>Surname Name</b> Date</span>
-                </figure>
-
-                <figure class="back-page-image">
-                    <img src="https://placehold.co/370x300" alt="Back Page News">
-                    <h2 class="back-page-title">Lorem Ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo ligula ac est tempus malesuada.</p>
-                    <span>by <b>Surname Name</b> Date</span>
-                </figure>
-            </section>
+            </div>
 
             <section id="latest-news">
                 <div class="latest-header">
@@ -189,7 +196,7 @@
             </section>
 
             <section id="categories-section">
-                <div class="categories-column">
+                <div class="categories-column news-views">
                     <div class="category-header">
                         <span class="line"></span>
                         <h2>LOREM IPSUM</h2>
@@ -209,7 +216,7 @@
                     <button class="more-btn">More News</button>
                 </div>
 
-                <div class="categories-column">
+                <div class="categories-column food-drink">
                     <div class="category-header">
                         <span class="line"></span>
                         <h2>LOREM IPSUM</h2>
@@ -229,7 +236,7 @@
                     <button class="more-btn">More Food & Drink</button>
                 </div>
 
-                <div class="categories-column">
+                <div class="categories-column arts-culture">
                     <div class="category-header">
                         <span class="line"></span>
                         <h2>LOREM IPSUM</h2>
@@ -249,7 +256,7 @@
                     <button class="more-btn">More Arts & Colture</button>
                 </div>
 
-                <div class="categories-column">
+                <div class="categories-column music">
                     <div class="category-header">
                         <span class="line"></span>
                         <h2>LOREM IPSUM</h2>
@@ -421,6 +428,17 @@
                     </div>
 
                     <button class="more-btn">View More Guides »</button>
+                </section>
+
+                <section id="digital-issue-mobile">
+                    <div class="digital-issue-header">
+                        <span class="line"></span>
+                        <h2>LOREM IPSUM</h2>
+                        <span class="line"></span>
+                    </div>
+
+                    <img class="digital-issue-cover" src="https://placehold.co/300x200" alt="digital issue">
+                    <button class="more-btn">View More Issue »</button>
                 </section>
 
                 <section id="newsletter-section">

@@ -23,7 +23,7 @@ div#nomination div:hover {
 }
 
 div.upper-container {
-    margin: 0px 150px 0px 160px;
+    padding: 0px clamp(20px, 10%, 160px);
 }
 
 header {
@@ -115,12 +115,17 @@ ul#nav-list  li:hover {
 section#main {
     display: flex;
     gap: 40px;
-    margin-right: 250px;
-    margin-top: 40px;
 }
 
 figure#main-image {
-    margin: 0;
+    margin: 0px;
+    flex: 1;
+    min-width: 0px;
+}
+
+figure#main-image img {
+    width: 100%;
+    height: auto;
 }
 
 figure figcaption {
@@ -145,6 +150,17 @@ h1#main-title {
 
 #main-image span b, #back-page-news span b {
     color: #F7941E;
+}
+
+#content-wrapper {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+#content-left {
+    flex: 1;
+    min-width: 0px;
 }
 
 /* CSS PER ASIDE*/
@@ -248,7 +264,7 @@ aside#events {
     border: none;
     cursor: pointer;
 }
-span#submit {
+span#submit, span#submit-mobile {
     text-align: center;
     font-weight: bold;
     cursor: pointer;
@@ -448,6 +464,10 @@ span#submit {
     width: 100%;
     height: 300px;
     object-fit: cover;
+}
+
+#digital-issue-mobile {
+    display: none;
 }
 
 /* CSS GUIDES */
@@ -680,4 +700,315 @@ footer {
 
 #support-us:hover {
     opacity: 0.7;
+}
+
+.smartphone {
+    display: none;
+}
+
+button.smartphone:first-of-type {
+    background-color: #F7941E;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    height: 32px;
+    padding: 0 10px;
+}
+
+button.smartphone:last-of-type {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: black;
+}
+
+/* CSS RESPONSIVE PER SCHERMO PIU PICCOLO */
+@media screen and (max-width: 1200px) {
+    div.social-icon {
+        display: none;
+    }
+
+    ul#nav-list {
+        display: none;
+    }
+
+    .header-actions > div {
+        display: none;
+    }
+
+    .header-actions {
+        gap: 8px;
+        align-items: center;
+    }
+
+    .header-actions button:not(.smartphone) {
+        display: none;
+    }
+
+    .smartphone {
+        display: block;
+    }
+
+    div.header-top {
+        padding: 8px 12px;
+        justify-content: space-between;
+    }
+
+    img#logo {
+        width: 150px;
+        height: auto;
+    }
+
+    figure#main-image {
+        flex: 1;
+        min-width: 0;
+    }
+
+    figure#main-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    aside#events {
+        width: 320px;
+        flex-shrink: 0;
+    }
+
+    section#main {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+/* CSS RESPONSIVE PER CELLULARE */
+@media screen and (max-width: 430px) {
+
+    /* LAYOUT GENERALE */
+    html, body {
+        overflow-x: clip;
+        width: 100%;
+    }
+
+    div.upper-container {
+        margin: 0px;
+        padding: 0px 12px;
+        box-sizing: border-box;
+    }
+
+    /* NOMINATION */
+    div#nomination {
+        padding: 9px 20px;
+    }
+
+    /* HEADER */
+    header {
+        left: 0px;
+        border-bottom: lightgray solid 1px;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    div.social-icon {
+        display: none;
+    }
+
+    ul#nav-list {
+        display: none;
+    }
+
+    div.header-top {
+        padding: 8px 12px;
+        justify-content: space-between;
+    }
+
+    img#logo {
+        width: 150px;
+        height: auto;
+    }
+
+    .header-actions > div {
+        display: none;
+    }
+
+    .header-actions {
+        gap: 8px;
+        align-items: center;
+    }
+
+    .smartphone {
+        display: block;
+    }
+
+    .header-actions button:not(.smartphone) {
+        display: none;
+    }
+
+    /* SEZIONE PRINCIPALE */
+    section#main {
+        flex-direction: column;
+        gap: 20px;
+        margin-right: 0px;
+        margin-top: 16px;
+    }
+
+    figure#main-image {
+        width: 100%;
+    }
+
+    figure#main-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    aside#events {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* BACK PAGE NEWS */
+    #back-page-news {
+        flex-direction: column;
+        max-width: 100%;
+        margin-right: 0px;
+        margin-bottom: 40px;
+        gap: 20px;
+    }
+
+    /* ASIDE PER MOBILE */
+    #content-wrapper {
+        flex-direction: column;
+    }
+
+    aside#events {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 900px;
+    }
+
+    /* LATEST, TRENDING e PHOTO SECTIONS */
+    .latest-grid, .trending-grid, .latest-photo-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* CATEGORIES */
+    #categories-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categories-column.news-views {
+        order: 1;
+    }
+    .categories-column.arts-culture {
+        order: 2;
+        margin-bottom: 700px;
+    }
+    .categories-column.food-drink {
+        order: 3;
+    }
+    .categories-column.music {
+        order: 4;
+    }
+
+    .categories-column {
+        width: 100%;
+    }
+
+    /* BEST OF ORLANDO e DIGITAL ISSUE */
+    #best-digital-wrapper {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .best-of-orlando-categories {
+        flex-direction: column;
+    }
+
+    .best-of-orlando-categories img {
+        width: 100%;
+    }
+
+    #digital-issue-section {
+        display: none;
+    }
+
+    #digital-issue-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+
+    /* GUIDES e NEWSLETTER */
+    #guides-newsletter-wrapper {
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 30px;
+    }
+
+    #newsletter-section {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 0px;
+    }
+
+    .orlando-guides-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    /* SIGN UP BUTTON */
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .signup-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* FOOTER */
+    footer {
+        margin-top: 80px;
+    }
+
+    #footer-links {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    /* CHAVA LOGOS */
+    #chava-logos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    #chava-logos img:last-child {
+        grid-column: 1;
+    }
+
+    #chava-logos img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* FOOTER BOTTOM */
+    #footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    /* SUPPORT US */
+    #support-us {
+        display: none;
+    }
 }
