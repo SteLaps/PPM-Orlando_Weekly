@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div id="nomination">
+<a href="#content-wrapper" class="sr-only" style="position:absolute; top: -100px;">Go to the main content of the page</a>
+        <div id="nomination" aria-label="Banner">
             <div> LOREM IPSUM </div>
         </div>
 
@@ -21,8 +22,8 @@
                     <div class="social-icon">
                         <img class="social-logo facebook-image" src="src/facebook-logo.png" alt="facebook">
                         <img class="social-logo bsky-image" src="src/bsky-logo.png" alt="bsky">
-                        <img class="social-logo tiktok-image" src="src/tiktok-logo.png" alt="tiktok">
-                        <img class="social-logo instagram-image" src="src/instagram-logo.png" alt="instagram">
+                        <img class="social-logo tiktok-image" src="src/tiktok-logo.png" alt="TikTok">
+                        <img class="social-logo instagram-image" src="src/instagram-logo.png" alt="Instagram">
                         <img class="social-logo apple-image" src="src/apple_news-logo.png" alt="apple.news">
                         <img class="social-logo google-image" src="src/google-logo.png" alt="google">
                     </div>
@@ -33,7 +34,7 @@
                         <button>Newsletter</button>
                         <div>Support</div>
                         <div>Add your Event</div>
-                        <button id="search">🔍</button>
+                        <button id="search" aria-label="Search">🔍</button>
 
                         <!-- visibile solo da cellulare, sostituisce il bottone "Support Us" a lato -->
                         <button class="smartphone btn-support" aria-label="Support Us">Support Us</button>
@@ -41,18 +42,18 @@
                     </div>
                 </div>
 
-                <nav class="nav-bar">
+                <nav class="nav-bar" aria-label="Main navigation Menu">
                     <ul id="nav-list">
-                        <li>NEWS <span>∨</span></li>
-                        <li>ART + CULTURE <span>∨</span></li>
-                        <li>FOOD + DRINK <span>∨</span></li>
-                        <li>MUSIC <span>∨</span></li>
-                        <li>MOVIES <span>∨</span></li>
-                        <li>CANNABIS <span>∨</span></li>
-                        <li>CALENDAR <span>∨</span></li>
-                        <li>BEST OF ORLANDO <span>∨</span></li>
+                        <li>NEWS <span aria-hidden="true">∨</span></li>
+                        <li>ART + CULTURE <span aria-hidden="true">∨</span></li>
+                        <li>FOOD + DRINK <span aria-hidden="true">∨</span></li>
+                        <li>MUSIC <span aria-hidden="true">∨</span></li>
+                        <li>MOVIES <span aria-hidden="true">∨</span></li>
+                        <li>CANNABIS <span aria-hidden="true">∨</span></li>
+                        <li>CALENDAR <span aria-hidden="true">∨</span></li>
+                        <li>BEST OF ORLANDO <span aria-hidden="true">∨</span></li>
                         <li>ORLANDO PHOTOS</li>
-                        <li>CONNECT <span>∨</span></li>
+                        <li>CONNECT <span aria-hidden="true">∨</span></li>
                     </ul>
                 </nav>
 
@@ -93,7 +94,7 @@
                     </div>
 
                     <div class="event-body">
-                        <img src="https://placehold.co/100x80" alt="evento">
+                        <img src="https://placehold.co/100x80" alt="Event">
                         <div class="event-info">
                             <h3>Lorem Ipsum</h3>
                             <p>Day, Month, Hour</p>
@@ -107,21 +108,32 @@
                         <button class="tab">Dining</button>
                     </div>
 
-                    <select class="event-select">
-                        <option>Lorem Ipsum</option>
-                    </select>
 
-                    <select class="event-select">
-                        <option>Lorem Ipsum</option>
-                    </select>
+                    <label>
+                        <span class="screen-reader-only">Event date</span>
+                        <select class="event-select">
+                            <option>Lorem Ipsum</option>
+                        </select>
+                    </label>
 
-                    <select class="event-select">
-                        <option>Lorem Ipsum</option>
-                    </select>
+                    <label>
+                        <span class="screen-reader-only">Event category</span>
+                        <select class="event-select">
+                            <option>Lorem Ipsum</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <span class="screen-reader-only">Event location</span>
+                        <select class="event-select">
+                            <option>Lorem Ipsum</option>
+                        </select>
+                    </label>
 
                     <div class="events-search">
-                        <input type="text" placeholder="Enter keywords...">
-                        <button>🔍</button>
+                        <label for="event-keyword" class="screen-reader-only">Enter keywords...</label>
+                        <input type="text" id="event-keyword" placeholder="Enter keywords...">
+                        <button id="search-btn" aria-label="Search">🔍</button>
                     </div>
 
                     <button class="search-btn">Search</button>
@@ -245,16 +257,16 @@
                     </div>
 
                     <figure class="categories-image">
-                        <img src="https://placehold.co/120X80" alt="Arts & Colture news">
+                        <img src="https://placehold.co/120X80" alt="Arts & Culture news">
                         <h2 class="back-page-title">Lorem Ipsum</h2>
                     </figure>
 
                     <figure class="categories-image">
-                        <img src="https://placehold.co/120x80" alt="Arts & Colture news">
+                        <img src="https://placehold.co/120x80" alt="Arts & Culture news">
                         <h2 class="back-page-title">Lorem Ipsum</h2>
                     </figure>
 
-                    <button class="more-btn">More Arts & Colture</button>
+                    <button class="more-btn">More Arts & Culture</button>
                 </div>
 
                 <div class="categories-column music">
@@ -350,7 +362,7 @@
                     </div>
 
                     <div class="best-of-orlando-categories">
-                        <img src="https://placehold.co/200x150" alt="best of orlando">
+                        <img src="https://placehold.co/200x150" alt="best of Orlando">
                         <ul class="best-of-orlando-list">
                             <li>Drinking + Nightlife</li>
                             <li>Arts + Entertainment</li>
@@ -443,10 +455,11 @@
                 </section>
 
                 <section id="newsletter-section">
-                    <p class="newsletter-tagline">Orlando's daily dose of what matters.</p>
-                    <p class="newsletter-subtitle">Subscribe to The Daily Weekly.</p>
+                    <h2 class="newsletter-tagline">Orlando's daily dose of what matters.</h2>
+                    <h2 class="newsletter-subtitle">Subscribe to The Daily Weekly.</h2>
                     <div class="newsletter-form">
-                        <input type="email" placeholder="Email Address">
+                        <label for="email" class="screen-reader-only">Email Address</label>
+                        <input type="email" id="email" placeholder="Email Address">
                         <button class="signup-btn">Sign up</button>
                     </div>
                 </section>
@@ -636,8 +649,8 @@
                     <div id="footer-social">
                         <img class="social-logo facebook-image" src="src/facebook-logo.png" alt="facebook">
                         <img class="social-logo bsky-image" src="src/bsky-logo.png" alt="bsky">
-                        <img class="social-logo tiktok-image" src="src/tiktok-logo.png" alt="tiktok">
-                        <img class="social-logo instagram-image" src="src/instagram-logo.png" alt="instagram">
+                        <img class="social-logo tiktok-image" src="src/tiktok-logo.png" alt="TikTok">
+                        <img class="social-logo instagram-image" src="src/instagram-logo.png" alt="Instagram">
                         <img class="social-logo apple-image" src="src/apple_news-logo.png" alt="apple.news">
                         <img class="social-logo google-image" src="src/google-logo.png" alt="google">
                     </div>

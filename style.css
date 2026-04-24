@@ -264,6 +264,10 @@ aside#events {
     margin-top: 0;
 }
 
+.event-select {
+    width: 100%;
+}
+
 .search-btn {
     width: 100%;
     background-color: black;
@@ -280,6 +284,11 @@ span#submit, span#submit-mobile {
     font-size: 20px;
     border-bottom: 1px solid lightgray;
     padding-bottom: 40px;
+}
+
+.screen-reader-only {
+    position: absolute;
+    clip: rect(0,0,0,0);
 }
 
 /* CSS DELLE NOTIZIE IN SECONDA PAGINA*/
@@ -533,7 +542,6 @@ span#submit, span#submit-mobile {
 /* CSS NEWSLETTER */
 #newsletter-section {
     margin-top: 70px;
-    /*width: auto;*/
     display: flex;
     flex: 1;
     flex-direction: column;
