@@ -2,6 +2,11 @@ body {
     margin: 0 15px 0 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -88,6 +93,10 @@ img.apple-image {
     border: none;
 }
 
+.header-actions button:hover {
+    background-color: gray;
+}
+
 .header-actions button#search {
     background-color: transparent;
     border: none;
@@ -159,6 +168,10 @@ h1#main-title {
 
 #main-image span b, #back-page-news span b {
     color: #F7941E;
+}
+
+span b:hover, img:hover, h2:hover {
+    cursor: pointer;
 }
 
 #content-wrapper {
@@ -297,7 +310,7 @@ span#submit, span#submit-mobile {
     gap: 35px;
     margin-top: 30px;
     max-width: 850px;
-    margin-bottom: 200px;
+    margin-bottom: 40px;
 }
 
 .back-page-image {
@@ -371,9 +384,8 @@ span#submit, span#submit-mobile {
 
 /* CSS NOTIZIE DA SECONDA PAGINA*/
 #categories-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     column-gap: 370px;
     row-gap: 25px;
     margin-top: 180px;
@@ -382,7 +394,6 @@ span#submit, span#submit-mobile {
 
 .categories-column {
     display: flex;
-    flex: 1;
     flex-direction: column;
     gap: 8px;
 }
@@ -449,6 +460,9 @@ span#submit, span#submit-mobile {
     display: flex;
     gap: 30px;
     margin-top: 80px;
+}
+.best-of-orlando-header h2:hover, .digital-issue-header h2:hover, .orlando-guides-header h2 {
+    cursor: auto;
 }
 
 #best-of-orlando-section, #digital-issue-section {
@@ -545,8 +559,8 @@ span#submit, span#submit-mobile {
     display: flex;
     flex: 1;
     flex-direction: column;
-    border-top: 2px solid lightgray;
-    border-bottom: 2px solid lightgray;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
     padding-top: 20px;
     padding-bottom: 30px;
 }
