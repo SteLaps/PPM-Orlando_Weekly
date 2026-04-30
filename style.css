@@ -607,6 +607,40 @@ span#submit, span#submit-mobile {
     border-radius: 4px;
 }
 
+#newsletter-banner {
+    background-color: #F7941E;
+    width: 100%;
+    position: relative;
+    padding: 15px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    gap: 5px;
+}
+
+.newsletter-banner-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.newsletter-banner-form {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    max-width: 500px;
+}
+
+.newsletter-banner-form input {
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
 /* CSS DEL FOOTER */
 footer {
     margin-top: 80px;
@@ -970,6 +1004,21 @@ button.btn-hamburger {
     }
 
     .signup-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* SECONDO SIGN UP BUTTON */
+    .newsletter-banner-form {
+        flex-direction: column;
+        max-width: 400px;
+    }
+
+    .newsletter-banner-form input {
+        width: 100%;
+    }
+
+    .newsletter-banner-form .signup-btn {
         width: 100%;
         text-align: center;
     }
